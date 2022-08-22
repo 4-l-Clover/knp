@@ -40,7 +40,7 @@ export const HomeOffers = () => {
           <h6 className="font-bold text-[28px] text-[#003F5C]">
             Smart Logistics as a Service
           </h6>
-          <p className="font-['Roboto'] text-[21px] text-[#707070]">
+          <p className="font-['Roboto'] text-[21px] text-[#707070] pt-10">
             AI-powered platform digitizes emails, PDFs, and
             <br />
             spreadsheets into structured data you can use

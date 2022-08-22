@@ -20,7 +20,7 @@ export const HomeOverview = () => {
         We connect information, processes, and your network so you can:
       </div>
 
-      <div className="relative h-[832px] mt-[196px] mb-[266px]">
+      <div className="relative h-[832px] mt-[196px] mb-[266px] pointer-events-none">
         <div className="absolute right-0">
           <Image src={itemsImage} alt="we do" />
         </div>
