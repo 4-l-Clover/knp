@@ -1,10 +1,11 @@
 import Image from "next/image";
 import offerServiceImage from "public/images/offer-overview.png";
 import offerBackground from "public/images/offer-bg.svg";
+import { Container } from "src/components/container";
 
 const Card = ({ title, p1, p2, p3 }) => {
   return (
-    <div className="bg-white rounded-lg p-8 w-[414px] min-h-[355px] shadow-lg">
+    <div className="bg-white rounded-lg p-8 w-[414px] min-h-[355px] shadow-common">
       <h6 className="text-[28px] font-bold text-[#003F5C]">{title}</h6>
       <p className="font-['Roboto'] text-[21px] text-[#707070] pt-[22px]">
         {p1}
@@ -24,9 +25,11 @@ const Card = ({ title, p1, p2, p3 }) => {
 export const HomeOffers = () => {
   return (
     <section className="relative overflow-y-hidden">
-      <h2 className="text-[#003F5C] font-bold text-5xl px-[140px] pt-[146px]">
-        Only KlearNow offers:
-      </h2>
+      <Container>
+        <h2 className="text-[#003F5C] font-bold text-5xl pt-[146px]">
+          Only KlearNow offers:
+        </h2>
+      </Container>
 
       <div className="absolute top-[428px] left-0 w-full z-[-1]">
         <div className="h-[850px] bg-gradient-to-l from-[#003F5C] via-[#428BA6] to-[#59B7C3] relative after:contents-[''] after:absolute after:left-0 after:top-0 after:w-[850] after:h-[850px] after:border-y-[425px] after:border-x-[425px] after:border-b-transparent after:border-r-transparent after:border-t-white after:border-l-white" />
@@ -75,14 +78,13 @@ export const HomeOffers = () => {
             />
           </div>
         </div>
-        <div className="overflow-x-hidden h-[1048px] relative">
+        <div className="overflow-x-hidden h-[1048px] relative shadow-heavy">
           <Image
             src={offerServiceImage}
             alt="overview"
             layout="fill"
             objectFit="cover"
             objectPosition="left"
-            className="rounded-2xl"
           />
         </div>
       </div>
