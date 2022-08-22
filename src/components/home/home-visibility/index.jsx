@@ -35,13 +35,14 @@ export const HomeVisibility = () => {
           <Card
             svgElement={<Image src={visibilityWhyImage} alt="where" />}
             title="Why"
-            subTitle="they are held up at customs"
+            subTitle={`they are held up at \n customs`}
             selected
           />
           <Card
             svgElement={<Image src={visibilityToolsImage} alt="where" />}
-            title=""
-            subTitle="... and the tools to take effective action"
+            title={`... and the tools to \n take effective \n action`}
+            subTitle=""
+            last
           />
         </div>
       </div>
