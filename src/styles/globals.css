@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-gradient-r {
+  background: linear-gradient(
+    90deg,
+    #1A3E59 0%,
+    #59B7C3 20%,
+    #428BA6 40%,
+    #003F5C 100%
+  );
+}
+.top-gradient-l {
+  background: linear-gradient(
+    -90deg,
+    #1A3E59 0%,
+    #59B7C3 20%,
+    #428BA6 40%,
+    #003F5C 100%
+  );
+}
