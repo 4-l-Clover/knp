@@ -84,7 +84,7 @@ export const HomeOffers = () => {
             alt="overview"
             layout="fill"
             objectFit="cover"
-            objectPosition="left"
+            objectPosition="left top"
           />
         </div>
       </div>
