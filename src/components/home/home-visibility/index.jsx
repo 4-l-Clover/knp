@@ -10,7 +10,7 @@ import { Card } from "./card";
 export const HomeVisibility = () => {
   return (
     <section>
-      <h2 className="text-[#003F5C] font-bold text-5xl px-[140px] my-[50px]">
+      <h2 className="text-[#003F5C] font-bold text-5xl px-[140px] mt-[50px] mb-[122px]">
         KlearNow gives you visibility
       </h2>
       <div className="h-[850px] bg-gradient-to-r from-[#003F5C] via-[#428BA6] to-[#59B7C3] relative after:contents-[''] after:absolute after:right-0 after:top-0 after:w-[850] after:h-[850px] after:border-y-[425px] after:border-x-[425px] after:border-t-transparent after:border-l-transparent after:border-b-white after:border-r-white">

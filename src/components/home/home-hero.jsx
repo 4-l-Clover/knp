@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 export const HomeHero = () => {
   return (
     <section className="relative">
-      <div className="absolute w-full h-full pointer-events-none">
+      <div className="absolute w-full pointer-events-none">
         <Image
           src={airPlaneImage}
           alt="airplane"
