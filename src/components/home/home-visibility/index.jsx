@@ -27,6 +27,7 @@ export const HomeVisibility = () => {
             title="Where"
             subTitle="your goods are"
           />
+          <div className="w-[1px]" />
           <Card
             svgElement={<Image src={visibilityWhenImage} alt="where" />}
             title="When"

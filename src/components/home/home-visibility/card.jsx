@@ -9,11 +9,15 @@ export const Card = ({
 }) => {
   return (
     <div
-      className={clsx("flex flex-col items-center bg-white pt-[136px]", {
-        "bg-white w-[285px] h-[431px] pb-[74px]": !selected,
-        "bg-gradient-to-b from-[#003F5C] via-[#428BA6] to-[#59B7C3] w-[372px] h-[550px] pb-[98px]":
-          selected,
-      })}
+      className={clsx(
+        "flex flex-col items-center bg-white pt-[136px] shadow-lg",
+        {
+          "bg-white w-[285px] h-[431px] pb-[74px]": !selected,
+          "bg-gradient-to-b from-[#003F5C] via-[#428BA6] to-[#59B7C3] w-[372px] h-[550px] pb-[98px]":
+            selected,
+          "mt-16 !pt-[78px] !pb-12": last,
+        }
+      )}
     >
       {svgElement}
       <p
