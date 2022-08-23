@@ -48,24 +48,24 @@ export const MainNavbar = () => {
             <div className="font-semibold mr-10 whitespace-nowrap text-white">
               SOLUTIONS FOR
             </div>
-            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center">
-              <GlobeIcon color="inheritence"/>
+            <div className="text-white hover:cursor-pointer flex items-center group">
+              <GlobeIcon color="inheritence" className="group-hover:text-[#05BAC5]"/>
               <div className="text-[14px] font-bold ml-4">IMPORTER</div>
             </div>
-            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
-              <BoxIcon color="inheritence"/>
+            <div className="text-white hover:cursor-pointer flex items-center ml-14 group">
+              <BoxIcon color="inheritence" className="group-hover:text-[#05BAC5]"/>
               <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 FREIGHT FORWARDER
               </div>
             </div>
-            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
-              <ShieldIcon color="inheritence"/>
+            <div className="text-white hover:cursor-pointer flex items-center ml-14 group">
+              <ShieldIcon color="inheritence" className="group-hover:text-[#05BAC5]"/>
               <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 CUSTOMS BROKER
               </div>
             </div>
-            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
-              <TruckIcon color="inheritence"/>
+            <div className="text-white hover:cursor-pointer flex items-center ml-14 group">
+              <TruckIcon color="inheritence" className="group-hover:text-[#05BAC5]"/>
               <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 DRAYAGE PROVIDER
               </div>

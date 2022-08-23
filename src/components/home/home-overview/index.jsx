@@ -1,7 +1,7 @@
 import Image from "next/image";
 import rightBackground from "public/images/overview-right-bg.svg";
 import leftBackground from "public/images/overview-left-bg.svg";
-import itemsImage from "public/images/overview-items.svg";
+import itemsImage from "public/images/overview-items.png";
 
 export const HomeOverview = () => {
   return (
