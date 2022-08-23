@@ -1,6 +1,7 @@
 import Image from "next/image";
 import visibilityImage from "public/images/visibility.svg";
 import manAndGirlImage from "public/images/man-girl.png";
+import manAndGirlShadowImage from 'public/images/man-girl-shadow.svg';
 import visibilityWhereImage from "public/images/visibility-where.svg";
 import visibilityWhenImage from "public/images/visibility-when.svg";
 import visibilityWhyImage from "public/images/visibility-why.svg";
@@ -19,10 +20,13 @@ export const HomeVisibility = () => {
       <div className="h-[850px] bg-gradient-to-r from-[#003F5C] via-[#428BA6] to-[#59B7C3] relative after:contents-[''] after:absolute after:right-0 after:top-0 after:w-[850] after:h-[850px] after:border-y-[425px] after:border-x-[425px] after:border-t-transparent after:border-l-transparent after:border-b-white after:border-r-white">
         <Container>
           <div className="absolute z-10 top-[254px] right-0">
-            <Image src={visibilityImage} className="" alt="visibility" />
+            <Image src={visibilityImage} alt="visibility" />
           </div>
           <div className="absolute z-10 top-[225px] right-[30px]">
             <Image src={manAndGirlImage} alt="people" />
+          </div>
+          <div className="absolute z-[9] top-[748px] right-0">
+            <Image src={manAndGirlShadowImage} alt="shadow" />
           </div>
 
           <div className="flex pt-[148px]">
