@@ -12,7 +12,7 @@ import { Container } from "src/components/container";
 export const MainNavbar = () => {
   return (
     <>
-      <AppBar className="!bg-white !text-[#003f5c] !shadow-none">
+      <AppBar className="!bg-white !text-[#003f5c] !shadow-heavier">
         <div className="top-gradient-r">
           <Container>
             <div className="flex items-center h-[70px]">
