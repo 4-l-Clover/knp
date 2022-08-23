@@ -17,7 +17,7 @@ export const MainFooter = () => {
         />
       </div>
       <Container>
-        <div className="pt-[107px] pb-[46px] text-white flex h-full">
+        <div className="pt-[107px] pb-[46px] text-white flex h-[602px]">
           <div className="flex flex-col items-start h-full -mt-4">
             <Image src={logoWhite} alt="footer logo" />
             <p className="pt-3 leading-loose">
