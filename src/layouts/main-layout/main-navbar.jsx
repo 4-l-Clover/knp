@@ -3,11 +3,11 @@ import Image from "next/image";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import logoSvg from "public/images/logo-top.svg";
 import SearchIcon from "@mui/icons-material/Search";
-import LanguageIcon from "@mui/icons-material/Language";
-import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
-import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
-import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 import { Container } from "src/components/container";
+import { BoxIcon } from "src/icons/box-icon";
+import { GlobeIcon } from "src/icons/globe-icon";
+import { ShieldIcon } from "src/icons/shield-icon";
+import { TruckIcon } from "src/icons/truck-icon";
 
 export const MainNavbar = () => {
   return (
@@ -22,7 +22,7 @@ export const MainNavbar = () => {
               </div>
               <div className="flex items-center ml-auto text-white">
                 <div className="font-bold mr-6">LOGIN</div>
-                <LanguageIcon />
+                <GlobeIcon />
                 <div className="font-bold ml-5">EN US</div>
               </div>
             </div>
@@ -43,30 +43,30 @@ export const MainNavbar = () => {
           </div>
         </Container>
 
-        <div className="text-white top-gradient-l h-[70px] flex items-center">
+        <div className="top-gradient-l h-[70px] flex items-center">
           <div className="absolute left-1/2 -translate-x-1/2 flex items-center">
-            <div className="font-semibold mr-8 whitespace-nowrap">
+            <div className="font-semibold mr-10 whitespace-nowrap text-white">
               SOLUTIONS FOR
             </div>
-            <div className="flex items-center">
-              <LanguageIcon />
-              <div className="text-[14px] font-bold ml-8">IMPORTER</div>
+            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center">
+              <GlobeIcon color="inheritence"/>
+              <div className="text-[14px] font-bold ml-4">IMPORTER</div>
             </div>
-            <div className="flex items-center ml-10">
-              <ReplyAllIcon />
-              <div className="text-[14px] font-bold ml-8 whitespace-nowrap">
+            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
+              <BoxIcon color="inheritence"/>
+              <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 FREIGHT FORWARDER
               </div>
             </div>
-            <div className="flex items-center ml-10">
-              <ShieldOutlinedIcon />
-              <div className="text-[14px] font-bold ml-8 whitespace-nowrap">
+            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
+              <ShieldIcon color="inheritence"/>
+              <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 CUSTOMS BROKER
               </div>
             </div>
-            <div className="flex items-center ml-10">
-              <LocalShippingOutlinedIcon />
-              <div className="text-[14px] font-bold ml-8 whitespace-nowrap">
+            <div className="text-white hover:cursor-pointer hover:text-[#05BAC5] flex items-center ml-14">
+              <TruckIcon color="inheritence"/>
+              <div className="text-[14px] font-bold ml-4 whitespace-nowrap">
                 DRAYAGE PROVIDER
               </div>
             </div>
