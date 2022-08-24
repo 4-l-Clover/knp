@@ -20,7 +20,7 @@ export const PlatformMenuContent = () => {
             keeping
           </h6>
           <p className="text-[21px] font-['Roboto'] text-[#707070]">
-            Angela Aaron, KlearNow's
+            Angela Aaron, KlearNow&apos;s
             <br />
             Senior Director of Compliance
             <br />
