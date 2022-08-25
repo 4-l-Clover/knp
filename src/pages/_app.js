@@ -23,7 +23,7 @@ const App = (props) => {
   useEffect(() => {
     AOS.init({
       // easing: "ease-out-cubic",
-      once: true,
+      once: false,
       duration: 500,
       // offset: 50,
     });
