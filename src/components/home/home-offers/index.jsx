@@ -3,9 +3,13 @@ import offerServiceImage from "public/images/offer-overview.png";
 import offerBackground from "public/images/offer-bg.svg";
 import { Container } from "src/components/container";
 
-const Card = ({ title, p1, p2, p3 }) => {
+const Card = ({ title, p1, p2, p3, offset }) => {
   return (
-    <div className="bg-white rounded-lg p-8 w-[414px] min-h-[355px] shadow-common">
+    <div
+      className="bg-white rounded-lg p-8 w-[414px] min-h-[355px] shadow-common"
+      data-aos="flip-up"
+      {...(offset && { "data-aos-offset": offset })}
+    >
       <h6 className="text-[28px] font-bold text-[#003F5C]">{title}</h6>
       <p className="font-['Roboto'] text-[21px] text-[#707070] pt-[22px]">
         {p1}
@@ -26,7 +30,10 @@ export const HomeOffers = () => {
   return (
     <section className="relative overflow-y-hidden">
       <Container>
-        <h2 className="text-[#003F5C] font-bold text-5xl pt-[146px]">
+        <h2
+          className="text-[#003F5C] font-bold text-5xl pt-[146px]"
+          data-aos="fade-up"
+        >
           Only KlearNow offers:
         </h2>
       </Container>
@@ -40,19 +47,21 @@ export const HomeOffers = () => {
 
       <div className="grid grid-cols-[auto_1fr] gap-[45px] pl-[140px] pt-[144px] pb-[150px]">
         <div className="pl-[53px]">
-          <h6 className="font-bold text-[28px] text-[#003F5C]">
-            Smart Logistics as a Service
-          </h6>
-          <p className="font-['Roboto'] text-[21px] text-[#707070] pt-10">
-            AI-powered platform digitizes emails, PDFs, and
-            <br />
-            spreadsheets into structured data you can use
-          </p>
-          <p className="font-['Roboto'] text-[21px] text-[#707070] pt-[22px]">
-            Deep learning and natural language processing
-            <br />
-            streamline data capture and cut errors
-          </p>
+          <div data-aos="zoom-out-left">
+            <h6 className="font-bold text-[28px] text-[#003F5C]">
+              Smart Logistics as a Service
+            </h6>
+            <p className="font-['Roboto'] text-[21px] text-[#707070] pt-10">
+              AI-powered platform digitizes emails, PDFs, and
+              <br />
+              spreadsheets into structured data you can use
+            </p>
+            <p className="font-['Roboto'] text-[21px] text-[#707070] pt-[22px]">
+              Deep learning and natural language processing
+              <br />
+              streamline data capture and cut errors
+            </p>
+          </div>
 
           <div className="grid grid-cols-2 gap-[45px] pt-[52px]">
             <Card
@@ -64,6 +73,7 @@ export const HomeOffers = () => {
               title="Machine-aided expertise to cut complexity"
               p1="Customs experts and AI complete your customs entries"
               p2="Technology connects suppliers, customs brokers, carriers, and network members"
+              offset="300"
             />
             <Card
               title="Cloud-based connectivity"
@@ -75,6 +85,7 @@ export const HomeOffers = () => {
               p1="Real-time shipment status and port terminal updates on arrival"
               p2="Monitor and address critical customs events"
               p3="Partner integrations consolidate information and add flexibility"
+              offset="300"
             />
           </div>
         </div>

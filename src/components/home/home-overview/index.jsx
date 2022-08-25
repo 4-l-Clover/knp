@@ -13,10 +13,10 @@ export const HomeOverview = () => {
         <Image src={leftBackground} alt="offer-bg" />
       </div>
 
-      <div className="text-[#003F5C] text-[52px] font-bold pt-[132px]">
+      <div className="text-[#003F5C] text-[52px] font-bold pt-[132px]" data-aos="fade-up">
         See it &#8212; Clear it &#8212; Move it
       </div>
-      <div className="text-[36px] text-[#707070] pt-3">
+      <div className="text-[36px] text-[#707070] pt-3" data-aos="fade-up">
         We connect information, processes, and your network so you can:
       </div>
 

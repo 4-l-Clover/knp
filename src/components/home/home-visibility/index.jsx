@@ -13,7 +13,7 @@ export const HomeVisibility = () => {
   return (
     <section>
       <Container>
-        <h2 className="text-[#003F5C] font-bold text-5xl mt-[50px] mb-[122px]">
+        <h2 className="text-[#003F5C] font-bold text-5xl mt-[50px] mb-[122px]" data-aos="fade-up">
           KlearNow gives you visibility
         </h2>
       </Container>

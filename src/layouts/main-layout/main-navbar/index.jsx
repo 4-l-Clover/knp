@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import { AppBar, Button, Collapse } from "@mui/material";
+import { AppBar, Button, Collapse, useTheme } from "@mui/material";
 import logoSvg from "public/images/logo-top.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import { Container } from "src/components/container";
@@ -9,6 +9,8 @@ import clsx from "clsx";
 import { NavbarTop } from "./navbar-top";
 import { NavbarMainMenu } from "./navbar-main-menu";
 import { PlatformMenuContent } from "./pull-down-menu/platform-menu";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
 
 const MenuItems = {
   platform: "platform",
@@ -16,11 +18,37 @@ const MenuItems = {
 };
 Object.freeze(MenuItems);
 
+function HideOnScroll(props) {
+  const { children, window } = props;
+  const theme = useTheme();
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide
+      appear={false}
+      direction="down"
+      in={!trigger}
+      easing={{
+        enter: theme.transitions.easing.easeOut,
+        exit: theme.transitions.easing.sharp,
+      }}
+      timeout={{
+        enter: 500,
+        exit: theme.transitions.duration.standard
+      }}
+    >
+      {children}
+    </Slide>
+  );
+}
+
 export const MainNavbar = () => {
   const [expandedMenuItem, setExpandedMenuItem] = useState("");
 
   return (
-    <>
+    <HideOnScroll>
       <AppBar className="!bg-white !text-[#003f5c] !shadow-heavier">
         <NavbarTop />
 
@@ -94,6 +122,6 @@ export const MainNavbar = () => {
 
         <NavbarMainMenu />
       </AppBar>
-    </>
+    </HideOnScroll>
   );
 };
