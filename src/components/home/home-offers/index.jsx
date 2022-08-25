@@ -3,12 +3,12 @@ import offerServiceImage from "public/images/offer-overview.png";
 import offerBackground from "public/images/offer-bg.svg";
 import { Container } from "src/components/container";
 
-const Card = ({ title, p1, p2, p3, offset }) => {
+const Card = ({ title, p1, p2, p3, delay }) => {
   return (
     <div
       className="bg-white rounded-lg p-8 w-[414px] min-h-[355px] shadow-common"
       data-aos="flip-up"
-      {...(offset && { "data-aos-offset": offset })}
+      {...(delay && { "data-aos-delay": delay })}
     >
       <h6 className="text-[28px] font-bold text-[#003F5C]">{title}</h6>
       <p className="font-['Roboto'] text-[21px] text-[#707070] pt-[22px]">
@@ -73,7 +73,7 @@ export const HomeOffers = () => {
               title="Machine-aided expertise to cut complexity"
               p1="Customs experts and AI complete your customs entries"
               p2="Technology connects suppliers, customs brokers, carriers, and network members"
-              offset="300"
+              delay="300"
             />
             <Card
               title="Cloud-based connectivity"
@@ -85,7 +85,7 @@ export const HomeOffers = () => {
               p1="Real-time shipment status and port terminal updates on arrival"
               p2="Monitor and address critical customs events"
               p3="Partner integrations consolidate information and add flexibility"
-              offset="300"
+              delay="300"
             />
           </div>
         </div>
