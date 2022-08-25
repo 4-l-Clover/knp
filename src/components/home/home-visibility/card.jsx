@@ -4,11 +4,15 @@ export const Card = ({
   svgElement,
   title,
   subTitle,
+  delay,
   selected = false,
   last = false,
 }) => {
   return (
     <div
+      data-aos="fade-left"
+      data-aos-once="false"
+      {...(delay && { "data-aos-delay": delay })}
       className={clsx(
         "flex flex-col items-center bg-white pt-[136px] shadow-common z-10",
         {

@@ -39,18 +39,21 @@ export const HomeVisibility = () => {
               svgElement={<Image src={visibilityWhenImage} alt="where" />}
               title="When"
               subTitle="they will arrive"
+              delay="200"
             />
             <Card
               svgElement={<Image src={visibilityWhyImage} alt="where" />}
               title="Why"
               subTitle={`they are held up at \n customs`}
               selected
+              delay="400"
             />
             <Card
               svgElement={<Image src={visibilityToolsImage} alt="where" />}
               title={`... and the tools to \n take effective \n action`}
               subTitle=""
               last
+              delay="700"
             />
           </div>
         </Container>
