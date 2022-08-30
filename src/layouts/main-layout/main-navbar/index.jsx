@@ -36,7 +36,7 @@ function HideOnScroll(props) {
       }}
       timeout={{
         enter: 500,
-        exit: theme.transitions.duration.standard
+        exit: theme.transitions.duration.standard,
       }}
     >
       {children}
@@ -53,11 +53,13 @@ export const MainNavbar = () => {
         <NavbarTop />
 
         <Container>
-          <div className="2xl:h-[60px] flex items-center">
-            <Image src={logoSvg} alt="logo" />
+          <div className="xl:h-[60px] flex items-center">
+            <div className="flex xl:w-[190px]">
+              <Image src={logoSvg} alt="logo" />
+            </div>
             <Button
               color="primary"
-              className="!font-bold !text-base !ml-[90px] !capitalize !px-4"
+              className="!font-bold !text-base xl:!ml-[40px] 2xl:!ml-[90px] !capitalize !px-4"
               onClick={() => {
                 setExpandedMenuItem((prev) =>
                   prev === MenuItems.platform ? "" : MenuItems.platform
@@ -74,7 +76,7 @@ export const MainNavbar = () => {
             </Button>
             <Button
               color="primary"
-              className="!font-bold !text-base !ml-16 !capitalize !px-4"
+              className="!font-bold !text-base xl:!ml-4 2xl:!ml-16 !capitalize !px-4"
               onClick={() => {
                 setExpandedMenuItem((prev) =>
                   prev === MenuItems.resources ? "" : MenuItems.resources
@@ -91,7 +93,7 @@ export const MainNavbar = () => {
             </Button>
             <Button
               color="primary"
-              className="!font-bold !text-base !ml-16 !capitalize !px-4"
+              className="!font-bold !text-base xl:!ml-4 2xl:!ml-16 !capitalize !px-4"
             >
               Company
             </Button>
