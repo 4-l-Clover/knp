@@ -53,7 +53,7 @@ export const MainNavbar = () => {
         <NavbarTop />
 
         <Container>
-          <div className="h-[106px] flex items-center">
+          <div className="2xl:h-[60px] flex items-center">
             <Image src={logoSvg} alt="logo" />
             <Button
               color="primary"
@@ -106,7 +106,7 @@ export const MainNavbar = () => {
         <Collapse
           in={expandedMenuItem === MenuItems.platform}
           classes={{
-            wrapperInner: "h-[443px] shadow-inner-thin",
+            wrapperInner: "h-[320px] shadow-inner-thin",
           }}
         >
           <PlatformMenuContent />
@@ -114,7 +114,7 @@ export const MainNavbar = () => {
         <Collapse
           in={expandedMenuItem === MenuItems.resources}
           classes={{
-            wrapperInner: "h-[443px] shadow-inner-thin",
+            wrapperInner: "h-[320px] shadow-inner-thin",
           }}
         >
           <PlatformMenuContent />

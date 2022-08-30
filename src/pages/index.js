@@ -1,16 +1,14 @@
 import { MainLayout } from "../layouts/main-layout";
-import { HomeHero } from "src/components/home/home-hero";
-import { HomeVisibility } from "src/components/home/home-visibility";
-import { HomeOffers } from "src/components/home/home-offers";
-import { HomeOverview } from "src/components/home/home-overview";
+import { HomeIntro } from "src/components/home/home-intro";
+import { HomeFeatures } from "src/components/home/home-features";
+import { HomeService } from "src/components/home/home-service";
 
 const Home = () => {
   return (
     <main>
-      <HomeHero />
-      <HomeOverview />
-      <HomeVisibility />
-      <HomeOffers />
+      <HomeIntro />
+      <HomeFeatures />
+      <HomeService />
     </main>
   );
 };

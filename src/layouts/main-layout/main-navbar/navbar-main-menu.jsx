@@ -5,7 +5,7 @@ import { TruckIcon } from "src/icons/truck-icon";
 
 export const NavbarMainMenu = () => {
   return (
-    <div className="top-gradient-l h-[70px] flex items-center">
+    <div className="top-gradient-l 2xl:h-[40px] flex items-center">
       <div className="absolute left-1/2 -translate-x-1/2 flex items-center">
         <div className="font-semibold mr-10 whitespace-nowrap text-white">
           SOLUTIONS FOR

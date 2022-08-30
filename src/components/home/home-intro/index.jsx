@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Grow } from "@mui/material";
-import airPlaneImage from "public/images/airplane.svg";
+import backgroundImage from "public/images/background.png";
 import laptopImage from "public/images/laptop.png";
-import { Container } from "../container";
+import { Container } from "src/components/container";
 
-export const HomeHero = () => {
+export const HomeIntro = () => {
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
@@ -18,31 +18,31 @@ export const HomeHero = () => {
     <section className="relative">
       <div className="absolute w-full pointer-events-none">
         <Image
-          src={airPlaneImage}
+          src={backgroundImage}
           alt="airplane"
           layout="responsive"
           priority
         />
       </div>
-      <div className="h-[66vw] bg-[#003F5C] after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:h-[190px] after:border-y-[95px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
+      <div className="h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
         <Container>
-          <div className="grid grid-cols-2 gap-10 pt-[400px] text-white z-10">
+          <div className="grid grid-cols-[auto_650px] gap-[54px] pt-[269px] text-white z-10">
             <div className="pt-9">
               <Grow in={isMounted} {...(isMounted ? { timeout: 1000 } : {})}>
                 <div className="origin-top-right">
-                  <p className="text-6xl font-bold leading-[1.1]">
+                  <p className="text-5xl font-bold leading-[1.1]">
                     Simplify global customs clearance and drayage
                   </p>
-                  <p className="text-4xl font-light leading-normal pt-[50px]">
+                  <p className="text-[25px] font-light leading-normal pt-[20px]">
                     Consolidated actionable trade
                     <br />
                     information at your fingertips
                   </p>
                 </div>
               </Grow>
-              <div className="pt-[44px]" />
+              <div className="pt-9" />
               <Grow in={isMounted} {...(isMounted ? { timeout: 1700 } : {})}>
-                <button className="origin-center bg-[#F6EC6A] hover:bg-[#d0c85a] active:bg-[#d0c85a] h-[64px] rounded-[36px] text-[#003F5C] text-[21px] font-bold px-[44px]">
+                <button className="origin-center bg-[#F6EC6A] hover:bg-[#d0c85a] active:bg-[#d0c85a] h-[60px] rounded-[32px] text-primary text-[20px] font-bold px-[44px]">
                   Explore KlearNow
                 </button>
               </Grow>
