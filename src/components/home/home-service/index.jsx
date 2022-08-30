@@ -62,13 +62,13 @@ export const HomeService = () => {
 
               <div className="relative w-[230px] h-[351px]" data-aos="zoom-in">
                 <div className="absolute z-10 w-[220px] h-[271px] top-[50px]">
-                  <Image src={visibilityImage} alt="visibility" responsive />
+                  <Image src={visibilityImage} alt="visibility" layout="responsive" />
                 </div>
                 <div className="absolute z-10 w-[145px] h-[316px] top-[40px] left-4">
-                  <Image src={manAndGirlImage} alt="people" responsive />
+                  <Image src={manAndGirlImage} alt="people" layout="responsive" />
                 </div>
                 <div className="absolute z-[9] w-[248px] h-[49px] bottom-0 -left-8">
-                  <Image src={manAndGirlShadowImage} alt="shadow" responsive />
+                  <Image src={manAndGirlShadowImage} alt="shadow" layout="responsive" />
                 </div>
               </div>
             </div>

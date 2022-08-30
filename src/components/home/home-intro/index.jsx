@@ -16,15 +16,16 @@ export const HomeIntro = () => {
 
   return (
     <section className="relative">
-      <div className="absolute w-full pointer-events-none">
+      <div className="absolute w-full pointer-events-none 2xl:h-[1080px]">
         <Image
           src={backgroundImage}
           alt="airplane"
-          layout="responsive"
+          layout="fill"
+          objectFit="cover"
           priority
         />
       </div>
-      <div className="h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
+      <div className="xl:h-[768px] 2xl:h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
         <Container>
           <div className="grid grid-cols-[auto_650px] gap-[54px] pt-[269px] text-white z-10">
             <div className="pt-9">
