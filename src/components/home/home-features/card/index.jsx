@@ -1,20 +1,51 @@
+import clsx from "clsx";
 import { ArrowRightIcon } from "src/icons/arrow-right-icon";
 
-export const FeatureCard = ({ svgComponent, title, listComponents }) => {
+export const FeatureCard = ({
+  svgComponent,
+  title,
+  listComponents,
+  centerImage,
+  delay,
+}) => {
   return (
-    <div className="rounded-lg shadow-feature-card flex items-center w-full pl-[50px] pr-10 2xl:h-[318px] bg-white">
-      <div className="flex items-center justify-center rounded-full w-[162px] h-[162px] border-[12px] border-[#003F5C20]">
-        {svgComponent}
-      </div>
-      <h2 className="text-[56px] font-bold text-black pl-6 w-[268px]">{title}</h2>
-      <ul className="pl-2 divide-y divide-[#70707020] flex-grow">
-        {listComponents.map((component, index) => (
-          <li key={`${title}-${index}`} className="flex items-center text-[20px] h-[62px]" data-aos="zoom-in" data-aos-once="true">
-            <div className="text-[18px] pr-6"><ArrowRightIcon fontSize="inherit"/></div>
-            {component}
-          </li>
-        ))}
-      </ul>
+    <div
+      data-aos="fade-left"
+      data-aos-once="false"
+      {...(delay && { "data-aos-delay": delay })}
+      className={clsx(
+        "px-6 py-8 w-[275px] h-[596px] bg-white border border-[#003F5C20] shrink-0 flex flex-col",
+        {
+          "flex justify-center items-center": Boolean(centerImage),
+        }
+      )}
+    >
+      {Boolean(centerImage) ? (
+        centerImage
+      ) : (
+        <>
+          <p className="text-[28px] font-medium text-primary">{title}</p>
+          <ul className="px-2 pt-9">
+            {listComponents.map((component, index) => (
+              <li
+                key={`${title}-${index}`}
+                className="flex pb-8 h-[114px]"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              >
+                <div className="text-base pr-2">
+                  <ArrowRightIcon fontSize="inherit" />
+                </div>
+                <p>{component}</p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="grow shrink min-h-0 flex items-center justify-center">
+            {svgComponent}
+          </div>
+        </>
+      )}
     </div>
   );
 };

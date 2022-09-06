@@ -13,6 +13,10 @@
     box-shadow: 0 30px 50px #00000014;
   }
 
+  .writing-vertical-lr {
+    writing-mode: vertical-lr;
+  }
+
   .overline-from-center:before {
     content: "";
     position: absolute;
