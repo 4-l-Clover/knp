@@ -10,7 +10,7 @@ import { WhatIcon } from "src/icons/what-icon";
 
 export const HomeService = () => {
   return (
-    <section className="relative before:bg-[radial-gradient(closest-side_at_50%_50%,_#ffffff_0%,_#ffffff_15%,_#05bac5_100%)] before:contents-[''] before:absolute before:opacity-40 before:inset-0 after:contents-[''] after:absolute after:top-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-b-transparent after:border-l-transparent after:border-t-white after:border-r-white">
+    <section className="relative before:bg-[radial-gradient(closest-side_at_50%_50%,_#ffffff_0%,_#ffffff_15%,_#05bac5_100%)] before:contents-[''] before:absolute before:opacity-10 before:inset-0 after:contents-[''] after:absolute after:top-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-b-transparent after:border-l-transparent after:border-t-white after:border-r-white">
       <div className="h-[810px] pt-[236px]">
         <Container>
           <div
