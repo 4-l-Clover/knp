@@ -22,9 +22,9 @@ export const HomeFeatures = () => {
             }
             title="See it"
             listComponents={[
-              <b>Know current customs clearance status</b>,
-              <b>Digitally track and trace across any carrier</b>,
-              <b>Monitor and cut demurrage</b>,
+              <b key="1">Know current customs clearance status</b>,
+              <b key="2">Digitally track and trace across any carrier</b>,
+              <b key="3">Monitor and cut demurrage</b>,
             ]}
           />
           <FeatureCard
@@ -35,9 +35,9 @@ export const HomeFeatures = () => {
             }
             title="Clear it"
             listComponents={[
-              <b>Automate data transfer with customs authorities</b>,
-              <b>Gain time with accurate AI-powered data entries</b>,
-              <b>Take informed actions to remove roadblocks</b>,
+              <b key="1">Automate data transfer with customs authorities</b>,
+              <b key="2">Gain time with accurate AI-powered data entries</b>,
+              <b key="3">Take informed actions to remove roadblocks</b>,
             ]}
             delay="200"
           />
@@ -49,9 +49,9 @@ export const HomeFeatures = () => {
             }
             title="Move it"
             listComponents={[
-              <b>Procure drayage services on a single platform</b>,
-              <b>connect truckers to shipments at the right time</b>,
-              <b>Optimize warehouse planning</b>,
+              <b key="1">Procure drayage services on a single platform</b>,
+              <b key="2">connect truckers to shipments at the right time</b>,
+              <b key="3">Optimize warehouse planning</b>,
             ]}
             delay="400"
           />
