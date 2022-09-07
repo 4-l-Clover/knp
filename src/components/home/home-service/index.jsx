@@ -3,7 +3,7 @@ import { Container } from "src/components/container";
 // import visibilityImage from "public/images/visibility.svg";
 // import manAndGirlImage from "public/images/man-girl.png";
 // import manAndGirlShadowImage from "public/images/man-girl-shadow.svg";
-import { ServiceCard } from "./card";
+// import { ServiceCard } from "./card";
 import { WhenIcon } from "src/icons/when-icon";
 import { WhereIcon } from "src/icons/where-icon";
 import { WhatIcon } from "src/icons/what-icon";
@@ -29,36 +29,30 @@ export const HomeService = () => {
             <div className="text-[88px]">
               <WhereIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] text-primary">Where</div>
+            <div className="text-[48px] font-bold text-primary">Where</div>
             <div className="text-[109px]">
               <WhenIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] text-primary">When</div>
+            <div className="text-[48px] font-bold text-primary">When</div>
             <div className="text-[137px]">
               <WhatIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] text-primary">What</div>
+            <div className="text-[48px] font-bold text-primary">What</div>
           </div>
 
-          <div className="w-full grid-cols-3 grid">
-            <div>
-              <div className="ml-auto pl-5 text-[18px] font-bold text-[#008DA9] w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
-                Your Goods Are
-              </div>
+          <div className="w-full grid-cols-3 grid text-primary">
+            <div className="ml-auto pl-5 text-[18px] font-bold w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
+              Your Goods Are
             </div>
-            <div>
-              <div className="ml-auto pl-5 text-[18px] font-bold text-[#008DA9] w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
-                Your Goods Will
-                <br />
-                Arrive
-              </div>
+            <div className="ml-auto pl-5 text-[18px] font-bold w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
+              Your Goods Will
+              <br />
+              Arrive
             </div>
-            <div>
-              <div className="ml-auto pl-5 text-[18px] font-bold text-[#008DA9] w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
-                Effective
-                <br />
-                Actions To Take
-              </div>
+            <div className="ml-auto pl-5 text-[18px] font-bold w-[202px] h-[70px] border border-transparent border-b-[#70707020]">
+              Effective
+              <br />
+              Actions To Take
             </div>
           </div>
         </Container>

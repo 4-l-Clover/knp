@@ -7,6 +7,7 @@ export const FeatureCard = ({
   listComponents,
   centerImage,
   delay,
+  last = false,
 }) => {
   return (
     <div
@@ -14,9 +15,10 @@ export const FeatureCard = ({
       data-aos-once="false"
       {...(delay && { "data-aos-delay": delay })}
       className={clsx(
-        "px-6 py-8 w-[275px] h-[596px] bg-white border border-[#003F5C20] shrink-0 flex flex-col",
+        "px-6 py-8 w-[275px] h-[596px] bg-white shrink-0 flex flex-col",
         {
           "flex justify-center items-center": Boolean(centerImage),
+          "border border-[#003F5C20]": !last,
         }
       )}
     >
