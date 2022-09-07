@@ -25,7 +25,7 @@ export const FeatureCard = ({
       ) : (
         <>
           <p className="text-[28px] font-medium text-primary">{title}</p>
-          <ul className="px-2 pt-9">
+          <ul className="pt-9">
             {listComponents.map((component, index) => (
               <li
                 key={`${title}-${index}`}
@@ -33,9 +33,6 @@ export const FeatureCard = ({
                 data-aos="zoom-in"
                 data-aos-once="true"
               >
-                <div className="text-base pr-2">
-                  <ArrowRightIcon fontSize="inherit" />
-                </div>
                 <p>{component}</p>
               </li>
             ))}

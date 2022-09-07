@@ -49,7 +49,7 @@ export const MainNavbar = () => {
 
   return (
     <HideOnScroll>
-      <AppBar className="!bg-white !text-[#003f5c] !shadow-heavier">
+      <AppBar className="!bg-white !text-[#003f5c] !shadow-topbar">
         <NavbarTop />
 
         <Container>
