@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Grow } from "@mui/material";
 import backgroundGradient from "public/images/background.svg";
 // import airplaneImage from "public/images/bg-airplane.svg";
-import shipImage from "public/images/bg-ship.svg";
+// import shipImage from "public/images/bg-ship.svg";
 // import truckImage from "public/images/bg-truck.svg";
 import laptopImage from "public/images/laptop.png";
 import { Container } from "src/components/container";
@@ -30,15 +30,6 @@ export const HomeIntro = () => {
       </div>
       <div className="xl:h-[768px] 2xl:h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:2xl:h-[216px] after:xl:h-[128px] after:2xl:border-y-[108px] after:xl:border-y-[64px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
         <Container>
-          <div
-            className="absolute 2xl:w-[539px] xl:w-[271px] 2xl:h-[253px] xl:h-[128px] 2xl:-bottom-[261px] xl:-bottom-[136px] 2xl:-right-[270px] xl:-right-[120px]"
-            data-aos="fade-left"
-            data-aos-delay="700"
-            data-aos-duration="1000"
-          >
-            <Image src={shipImage} alt="ship" layout="responsive" priority />
-          </div>
-
           <div className="grid 2xl:grid-cols-[auto_704px] xl:grid-cols-[auto_585px] gap-[46px] 2xl:pt-[269px] xl:pt-[217px] text-white z-10">
             <div>
               <Grow in={isMounted} {...(isMounted ? { timeout: 1000 } : {})}>
