@@ -8,15 +8,15 @@ import kMarkImage from "public/images/k-bg.svg";
 
 export const HomeFeatures = () => {
   return (
-    <section className="pt-[87px] pb-[127px]">
+    <section className="2xl:pt-[87px] xl:pt-[141px] 2xl:pb-[127px] xl:pb-[112px]">
       <Container>
         <div className="flex items-center">
-          <div className="text-primary text-[48px] font-medium rotate-180 writing-vertical-lr mr-auto whitespace-nowrap">
+          <div className="text-primary 2xl:text-[48px] xl:text-[37px] font-medium rotate-180 writing-vertical-lr mr-auto whitespace-nowrap">
             See it &#8212; Clear it &#8212; Move it
           </div>
           <FeatureCard
             svgComponent={
-              <div className="text-[76px]">
+              <div className="2xl:text-[76px] xl:text-[66px]">
                 <SeeItIcon fontSize="inherit" />
               </div>
             }
@@ -29,7 +29,7 @@ export const HomeFeatures = () => {
           />
           <FeatureCard
             svgComponent={
-              <div className="text-[92px]">
+              <div className="2xl:text-[92px] xl:text-[80px]">
                 <ClearItIcon fontSize="inherit" />
               </div>
             }
@@ -43,7 +43,7 @@ export const HomeFeatures = () => {
           />
           <FeatureCard
             svgComponent={
-              <div className="text-[58px]">
+              <div className="2xl:text-[58px] xl:text-[52px]">
                 <MoveItIcon fontSize="inherit" />
               </div>
             }

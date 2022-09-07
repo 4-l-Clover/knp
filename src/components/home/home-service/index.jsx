@@ -10,11 +10,11 @@ import { WhatIcon } from "src/icons/what-icon";
 
 export const HomeService = () => {
   return (
-    <section className="relative before:bg-[radial-gradient(closest-side_at_50%_50%,_#ffffff_0%,_#ffffff_15%,_#05bac5_100%)] before:contents-[''] before:absolute before:opacity-10 before:inset-0 after:contents-[''] after:absolute after:top-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-b-transparent after:border-l-transparent after:border-t-white after:border-r-white">
-      <div className="h-[810px] pt-[236px]">
+    <section className="relative before:bg-[radial-gradient(closest-side_at_50%_50%,_#ffffff_0%,_#ffffff_15%,_#05bac5_100%)] before:contents-[''] before:absolute before:opacity-10 before:inset-0 after:contents-[''] after:absolute after:top-0 after:w-[100vw] after:2xl:h-[216px] after:xl:h-[128px] after:2xl:border-y-[108px] after:xl:border-y-[64px] after:border-x-[50vw] after:border-b-transparent after:border-l-transparent after:border-t-white after:border-r-white">
+      <div className="2xl:h-[810px] xl:h-[768px] 2xl:pt-[236px] xl:pt-[179px]">
         <Container>
           <div
-            className="text-primary text-[48px] font-bold text-center"
+            className="text-primary 2xl:text-[48px] xl:text-4xl font-bold text-center"
             data-aos="fade-up"
           >
             Be in the KNOW with...
@@ -29,15 +29,15 @@ export const HomeService = () => {
             <div className="text-[88px]">
               <WhereIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] font-bold text-primary">Where</div>
+            <div className="2xl:text-[48px] xl:text-4xl font-bold text-primary">Where</div>
             <div className="text-[109px]">
               <WhenIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] font-bold text-primary">When</div>
+            <div className="2xl:text-[48px] xl:text-4xl font-bold text-primary">When</div>
             <div className="text-[137px]">
               <WhatIcon fontSize="inherit" />
             </div>
-            <div className="text-[48px] font-bold text-primary">What</div>
+            <div className="2xl:text-[48px] xl:text-4xl font-bold text-primary">What</div>
           </div>
 
           <div className="w-full grid-cols-3 grid text-primary">

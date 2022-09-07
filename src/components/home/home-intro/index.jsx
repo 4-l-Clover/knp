@@ -28,10 +28,10 @@ export const HomeIntro = () => {
           priority
         />
       </div>
-      <div className="xl:h-[768px] 2xl:h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:h-[216px] after:border-y-[108px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
+      <div className="xl:h-[768px] 2xl:h-[1080px] bg-primary after:contents-[''] after:absolute after:bottom-0 after:w-[100vw] after:2xl:h-[216px] after:xl:h-[128px] after:2xl:border-y-[108px] after:xl:border-y-[64px] after:border-x-[50vw] after:border-t-transparent after:border-r-transparent after:border-b-white after:border-l-white">
         <Container>
           <div
-            className="absolute w-[539px] h-[253px] -bottom-[261px] -right-[270px]"
+            className="absolute 2xl:w-[539px] xl:w-[271px] 2xl:h-[253px] xl:h-[128px] 2xl:-bottom-[261px] xl:-bottom-[136px] 2xl:-right-[270px] xl:-right-[120px]"
             data-aos="fade-left"
             data-aos-delay="700"
             data-aos-duration="1000"
@@ -39,14 +39,14 @@ export const HomeIntro = () => {
             <Image src={shipImage} alt="ship" layout="responsive" priority />
           </div>
 
-          <div className="grid grid-cols-[auto_704px] gap-[46px] pt-[269px] text-white z-10">
+          <div className="grid 2xl:grid-cols-[auto_704px] xl:grid-cols-[auto_585px] gap-[46px] 2xl:pt-[269px] xl:pt-[217px] text-white z-10">
             <div>
               <Grow in={isMounted} {...(isMounted ? { timeout: 1000 } : {})}>
                 <div className="origin-top-right">
-                  <p className="text-5xl font-bold leading-[1.1]">
+                  <p className="2xl:text-5xl xl:text-4xl font-bold leading-[1.1]">
                     Simplify global customs clearance and drayage
                   </p>
-                  <p className="text-[25px] font-light leading-normal pt-[20px]">
+                  <p className="2xl:text-[25px] xl:text-[20px] font-light leading-normal pt-[20px]">
                     Consolidated and actionable
                     <br />
                     trade information at your
@@ -57,7 +57,7 @@ export const HomeIntro = () => {
               </Grow>
               <div className="pt-9" />
               <Grow in={isMounted} {...(isMounted ? { timeout: 1700 } : {})}>
-                <button className="origin-center bg-[#F6EC6A] hover:bg-[#d0c85a] active:bg-[#d0c85a] h-[60px] rounded-[32px] text-primary text-[20px] font-bold px-[44px]">
+                <button className="origin-center bg-[#F6EC6A] hover:bg-[#d0c85a] active:bg-[#d0c85a] 2xl:h-[60px] xl:h-[53px] rounded-[32px] text-primary 2xl:text-[20px] xl:text-[18px] font-bold px-[44px]">
                   Explore KlearNow
                 </button>
               </Grow>
