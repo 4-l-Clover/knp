@@ -19,7 +19,7 @@ export const HomeIntro = () => {
 
   return (
     <section className="relative">
-      <div className="absolute w-full pointer-events-none 2xl:h-[1080px]">
+      <div className="absolute w-full pointer-events-none 2xl:h-[1080px] xl:h-[768px]">
         <Image
           src={backgroundGradient}
           alt="gradient"
