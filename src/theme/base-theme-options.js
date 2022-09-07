@@ -1,3 +1,5 @@
+import { alpha, darken } from "@mui/material";
+
 export const baseThemeOptions = {
   typography: {
     fontFamily:
@@ -19,19 +21,34 @@ export const baseThemeOptions = {
     // mode: 'light',
     // neutral,
     primary: {
-      main: '#003F5C',
+      main: "#003F5C",
       // light: '#828DF8',
       // dark: '#3832A0',
-      contrastText: '#FFFFFF'
+      contrastText: "#FFFFFF",
     },
     secondary: {
-      main: '#008DA9',
+      main: "#008DA9",
       // light: '#828DF8',
       // dark: '#3832A0',
-      contrastText: '#FFFFFF'
+      contrastText: "#FFFFFF",
     },
     // success,
     // text,
     // warning
+  },
+  components: {
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          backgroundColor: alpha(darken("#070C27", 0.5), 0.4),
+          backdropFilter: "blur(2px)",
+
+          "&.MuiBackdrop-invisible": {
+            backgroundColor: "transparent",
+            backdropFilter: "blur(2px)",
+          },
+        },
+      },
+    },
   },
 };
