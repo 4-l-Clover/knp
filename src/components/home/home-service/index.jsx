@@ -31,7 +31,7 @@ export const HomeService = () => {
                 <div className='2xl:text-[48px] xl:text-4xl font-bold tracking-[0.37px] h-[153px] flex items-center'>
                   Where
                 </div>
-                <div className='mt-5 text-[18px] font-bold h-[70px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
+                <div className='-mt-5 text-[18px] font-bold h-[92px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
                   Your Goods Are
                 </div>
               </div>
@@ -45,7 +45,7 @@ export const HomeService = () => {
                 <div className='2xl:text-[48px] xl:text-4xl font-bold tracking-[0.37px] h-[153px] flex items-center'>
                   When
                 </div>
-                <div className='mt-5 text-[18px] font-bold h-[70px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
+                <div className='-mt-5 text-[18px] font-bold h-[92px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
                   Your Goods Will
                   <br />
                   Arrive
@@ -62,7 +62,7 @@ export const HomeService = () => {
                 <div className='2xl:text-[48px] xl:text-4xl font-bold tracking-[0.37px] h-[153px] flex items-center'>
                   What
                 </div>
-                <div className='mt-5 text-[18px] font-bold h-[70px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
+                <div className='-mt-5 text-[18px] font-bold h-[92px] border border-transparent border-b-[#70707020] tracking-[0.45px]'>
                   Effective
                   <br />
                   Actions To Take

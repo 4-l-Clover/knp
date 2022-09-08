@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { Button, List, ListItem, Popover } from "@mui/material";
+import { useRef, useState } from 'react';
+import { Button, List, ListItem, Popover } from '@mui/material';
 
 export const LoginButton = () => {
   const ref = useRef(null);
@@ -8,7 +8,7 @@ export const LoginButton = () => {
   return (
     <>
       <Button
-        className="!font-bold !text-base xl:!mr-[18px] 2xl:!mr-5 !px-2 !text-white"
+        className='!font-bold !text-base !mr-6 !px-2 !text-white'
         ref={ref}
         onClick={() => setIsOpen(true)}
       >
@@ -20,18 +20,22 @@ export const LoginButton = () => {
         onClose={() => setIsOpen(false)}
         open={isOpen}
         anchorOrigin={{
-          vertical: "center",
-          horizontal: "right",
+          vertical: 'center',
+          horizontal: 'right'
         }}
         transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
+          vertical: 'top',
+          horizontal: 'right'
         }}
       >
-        <List component="nav" className="p-2">
-          <ListItem onClick={() => setIsOpen(false)} button className="!text-primary">Importer</ListItem>
-          <ListItem onClick={() => setIsOpen(false)} button className="!text-primary">Customs Broker</ListItem>
-          <ListItem onClick={() => setIsOpen(false)} button className="!text-primary">
+        <List component='nav' className='p-2'>
+          <ListItem onClick={() => setIsOpen(false)} button className='!text-primary'>
+            Importer
+          </ListItem>
+          <ListItem onClick={() => setIsOpen(false)} button className='!text-primary'>
+            Customs Broker
+          </ListItem>
+          <ListItem onClick={() => setIsOpen(false)} button className='!text-primary'>
             Freight Forwarder
           </ListItem>
         </List>
