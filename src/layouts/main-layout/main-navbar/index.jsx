@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import NextLink from 'next/link';
 import Image from 'next/image';
 import { AppBar, Button, Collapse, useTheme } from '@mui/material';
 import logoSvg from 'public/images/logo-top.svg';
@@ -56,9 +57,13 @@ export const MainNavbar = () => {
 
         <Container>
           <div className='xl:h-[60px] flex items-center'>
-            <div className='flex xl:w-[190px]'>
-              <Image src={logoSvg} alt='logo' />
-            </div>
+            <NextLink href='/' passHref>
+              <a>
+                <div className='flex xl:w-[190px]'>
+                  <Image src={logoSvg} alt='logo' />
+                </div>
+              </a>
+            </NextLink>
             <Button
               color='primary'
               className='!font-bold !text-base xl:!ml-[40px] 2xl:!ml-[90px] !capitalize !px-4'
