@@ -1,9 +1,9 @@
-import { alpha, darken } from "@mui/material";
+import { alpha, darken } from '@mui/material';
 
 export const baseThemeOptions = {
   typography: {
     fontFamily:
-      '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+      '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"'
   },
   palette: {
     // action: {
@@ -21,34 +21,56 @@ export const baseThemeOptions = {
     // mode: 'light',
     // neutral,
     primary: {
-      main: "#003F5C",
+      main: '#003F5C',
       // light: '#828DF8',
       // dark: '#3832A0',
-      contrastText: "#FFFFFF",
+      contrastText: '#FFFFFF'
     },
     secondary: {
-      main: "#008DA9",
+      main: '#008DA9',
       // light: '#828DF8',
       // dark: '#3832A0',
-      contrastText: "#FFFFFF",
-    },
+      contrastText: '#FFFFFF'
+    }
     // success,
     // text,
     // warning
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '*, *::before, *::after': {
+          boxSizing: 'border-box'
+        },
+        '#nprogress': {
+          pointerEvents: 'none'
+        },
+        '#nprogress .bar': {
+          background: '#05bac5',
+          height: 3,
+          left: 0,
+          position: 'fixed',
+          top: 0,
+          width: '100%',
+          zIndex: 2000
+        },
+        '#nprogress .peg': {
+          boxShadow: '0 0 15px #ffffff90, 0 0 8px #ffffffc0'
+        }
+      }
+    },
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          backgroundColor: alpha(darken("#070C27", 0.5), 0.4),
-          backdropFilter: "blur(2px)",
+          backgroundColor: alpha(darken('#070C27', 0.5), 0.4),
+          backdropFilter: 'blur(2px)',
 
-          "&.MuiBackdrop-invisible": {
-            backgroundColor: "transparent",
-            backdropFilter: "blur(2px)",
-          },
-        },
-      },
-    },
-  },
+          '&.MuiBackdrop-invisible': {
+            backgroundColor: 'transparent',
+            backdropFilter: 'blur(2px)'
+          }
+        }
+      }
+    }
+  }
 };

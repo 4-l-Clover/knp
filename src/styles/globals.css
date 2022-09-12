@@ -2,7 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    @apply h-full w-full;
+  }
+  
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  main, footer {
+    @apply shrink-0
+  }
+}
+
 @layer utilities {
+  #__next {
+    @apply w-full h-full flex flex-col;
+  }
+
   .shadow-topbar {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
   }
@@ -20,7 +42,7 @@
     writing-mode: vertical-lr;
   }
 
-  .overline-from-center:before {
+  .underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -33,11 +55,19 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
+  .underline-from-left:before {
+    content: "";
+    position: absolute;
+    /* z-index: -1; */
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffffff7a;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
 }
 
 .top-gradient-r {

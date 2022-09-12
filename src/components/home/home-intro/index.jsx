@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Grow } from "@mui/material";
 import backgroundGradient from "public/images/background.svg";
-// import airplaneImage from "public/images/bg-airplane.svg";
-// import shipImage from "public/images/bg-ship.svg";
-// import truckImage from "public/images/bg-truck.svg";
 import laptopImage from "public/images/laptop.png";
 import { Container } from "src/components/container";
 
