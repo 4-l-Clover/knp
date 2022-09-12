@@ -13,6 +13,8 @@ import { PlatformMenuContent } from './pull-down-menu/platform-menu';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { ShipmentTracker } from './shipment-tracker';
+import { PlatformDropdown } from './platform-dropdown';
+import { CompanyDropdown } from './company-dropdown';
 
 const MenuItems = {
   platform: 'platform',
@@ -64,23 +66,8 @@ export const MainNavbar = () => {
                 </div>
               </a>
             </NextLink>
-            <Button
-              color='primary'
-              className='!font-bold !text-base xl:!ml-[40px] 2xl:!ml-[90px] !capitalize !px-4'
-              onClick={() => {
-                setExpandedMenuItem((prev) =>
-                  prev === MenuItems.platform ? '' : MenuItems.platform
-                );
-              }}
-            >
-              Platform
-              <ArrowDownIcon
-                fontSize='inherit'
-                className={clsx('ml-2 text-[#428ba6]', {
-                  'rotate-180': expandedMenuItem === MenuItems.platform
-                })}
-              />
-            </Button>
+
+            <PlatformDropdown />
             <Button
               color='primary'
               className='!font-bold !text-base xl:!ml-4 2xl:!ml-16 !capitalize !px-4'
@@ -98,12 +85,7 @@ export const MainNavbar = () => {
                 })}
               />
             </Button>
-            <Button
-              color='primary'
-              className='!font-bold !text-base xl:!ml-4 2xl:!ml-16 !capitalize !px-4'
-            >
-              Company
-            </Button>
+            <CompanyDropdown />
 
             <div className='ml-auto flex items-center'>
               <Button
