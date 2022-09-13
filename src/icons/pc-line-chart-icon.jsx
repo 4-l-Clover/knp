@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export function SeeItIcon(props) {
+export function PCLineChartIcon(props) {
   return (
     <SvgIcon {...props} viewBox="0 0 76.079 60">
       <g transform="translate(-931.372 -2151.585)">

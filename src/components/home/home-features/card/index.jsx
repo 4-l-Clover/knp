@@ -1,50 +1,20 @@
-import clsx from "clsx";
-import { ArrowRightIcon } from "src/icons/arrow-right-icon";
+import clsx from 'clsx';
+import { PCLineChartIcon } from 'src/icons/pc-line-chart-icon';
 
-export const FeatureCard = ({
-  svgComponent,
-  title,
-  listComponents,
-  centerImage,
-  delay,
-  last = false,
-}) => {
+export const FeatureCard = ({ title, delay }) => {
   return (
     <div
-      data-aos="fade-left"
-      data-aos-once="false"
-      {...(delay && { "data-aos-delay": delay })}
+      data-aos='fade-left'
+      data-aos-once='false'
+      {...(delay && { 'data-aos-delay': delay })}
       className={clsx(
-        "px-6 py-8 2xl:w-[275px] xl:w-[237px] 2xl:h-[596px] xl:h-[514px] bg-white shrink-0 flex flex-col relative",
-        {
-          "flex justify-center items-center": Boolean(centerImage),
-          "border border-[#003F5C20]": !last,
-        }
+        'pt-10 xl:w-[220px] xl:h-[448px] bg-white shrink-0 flex flex-col border border-[#003F5C20]'
       )}
     >
-      {Boolean(centerImage) ? (
-        centerImage
-      ) : (
-        <>
-          <p className="text-[28px] font-bold text-primary">{title}</p>
-          <ul className="pt-9">
-            {listComponents.map((component, index) => (
-              <li
-                key={`${title}-${index}`}
-                className="flex pb-8 2xl:h-[114px] xl:h-[95px]"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              >
-                <p>{component}</p>
-              </li>
-            ))}
-          </ul>
-
-          <div className="grow shrink min-h-0 flex items-center justify-center">
-            {svgComponent}
-          </div>
-        </>
-      )}
+      <div className='text-[66px] flex justify-center'>
+        <PCLineChartIcon fontSize='inherit' />
+      </div>
+      <p className="pt-16 mt-2 px-9 text-[20px] font-['Roboto']">{title}</p>
     </div>
   );
 };

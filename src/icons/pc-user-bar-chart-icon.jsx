@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export function ClearItIcon(props) {
+export function PCUserBarChartIcon(props) {
   return (
     <SvgIcon {...props} viewBox="0 0 92.755 60">
       <g transform="translate(-1072.479 -2149.082)">
