@@ -47,8 +47,8 @@ export const HomeService = () => {
           </div>
         </Container>
 
-        <ul className="relative text-white font-['Roboto'] text-[20px] font-bold">
-          <li className='absolute left-[42.7vw] -top-[192px]'>
+        <ul className="relative text-white font-['Roboto'] text-[20px] font-bold flex items-center -mt-[89px]">
+          <li className='absolute left-[42.7vw]'>
             Navigate and
             <br />
             address
@@ -63,7 +63,7 @@ export const HomeService = () => {
             <br />
             visibility
           </li>
-          <li className='absolute left-[56.5vw] -top-[200px]'>
+          <li className='absolute left-[56.5vw]'>
             Rely on
             <br />
             detailedon
@@ -78,7 +78,7 @@ export const HomeService = () => {
             <br />
             control
           </li>
-          <li className='absolute left-[70.6vw] -top-[220px]'>
+          <li className='absolute left-[70.6vw]'>
             Reduce
             <br />
             downtime and

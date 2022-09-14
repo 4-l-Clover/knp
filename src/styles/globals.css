@@ -92,3 +92,7 @@
 .service-section-bg {
   background: transparent linear-gradient(146deg, #003F5C 0%, #428BA6 71%, #59B7C3 100%);
 }
+
+ul.before-image + span {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.16);
+}

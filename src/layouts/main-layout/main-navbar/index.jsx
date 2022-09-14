@@ -49,7 +49,7 @@ function HideOnScroll(props) {
 }
 
 export const MainNavbar = () => {
-  const [expandedMenuItem, setExpandedMenuItem] = useState('');
+  const [expandedMenuItem, setExpandedMenuItem] = useState(false);
   const [openShipmentTracker, setOpenShipmentTracker] = useState(false);
 
   return (
@@ -72,16 +72,14 @@ export const MainNavbar = () => {
               color='primary'
               className='!font-bold !text-base xl:!ml-4 2xl:!ml-16 !capitalize !px-4'
               onClick={() => {
-                setExpandedMenuItem((prev) =>
-                  prev === MenuItems.resources ? '' : MenuItems.resources
-                );
+                setExpandedMenuItem((prev) => !prev);
               }}
             >
               Resources
               <ArrowDownIcon
                 fontSize='inherit'
                 className={clsx('ml-2 text-[#428ba6]', {
-                  'rotate-180': expandedMenuItem === MenuItems.resources
+                  'rotate-180': expandedMenuItem
                 })}
               />
             </Button>
@@ -116,20 +114,12 @@ export const MainNavbar = () => {
         </Container>
 
         <Collapse
-          in={expandedMenuItem === MenuItems.platform}
+          in={expandedMenuItem}
           classes={{
             wrapperInner: 'h-[320px] shadow-inner-thin'
           }}
         >
-          <PlatformMenuContent />
-        </Collapse>
-        <Collapse
-          in={expandedMenuItem === MenuItems.resources}
-          classes={{
-            wrapperInner: 'h-[320px] shadow-inner-thin'
-          }}
-        >
-          <PlatformMenuContent />
+          <PlatformMenuContent onClose={() => setExpandedMenuItem(false)} />
         </Collapse>
 
         <NavbarMainMenu />
